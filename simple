@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <script>
+      let a= "hello world"
+      document.write(a+"")
+        </script>
+    </body>
+</html>

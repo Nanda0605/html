@@ -1,0 +1,34 @@
+<html>
+    <style>
+        div{
+            height: 100px;
+            width:100 ;
+            background-color: violet;
+            transition: linear;
+            animation-name: slide;
+            animation-delay: 3ms;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            transition: linear 2s;
+        }
+        div:hover{
+            transform: translatex(100px);
+        }
+        @keyframes slide{
+            50%{
+                height: 150px;
+                width: 150px;
+                background-color: blue;   
+            }
+            100%{
+                height: 200px;
+                width: 200px;
+                background-color: black;
+            }
+        }
+    </style>
+    <body>
+        <div></div>
+    </body>
+</html>

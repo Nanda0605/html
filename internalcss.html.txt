@@ -1,0 +1,15 @@
+<html>
+<head>internal css</head>
+<style>h1{
+color:red;
+font-style:italic;
+}
+p{
+color:blue;
+}
+</style>
+<body>
+<h1>hi</h1>
+<p>this is charan</p>
+</body>
+</html>

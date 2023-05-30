@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<title>
+DOCUMENT
+</title>
+</head>
+<body>
+<h1> HTML <h4>
+<p>
+hyper text markup language 
+<br>
+html is used to develop the pages
+<br>
+html is a platform independent
+</p>
+</html>

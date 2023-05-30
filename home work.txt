@@ -1,0 +1,147 @@
+1ST PROGRAM:
+import java.util.Scanner;
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        long factorial = calculateFactorial(number); System.out.println("Factorial of " + number + " is: " + factorial);
+        scanner.close();
+    }
+    public static long calculateFactorial(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Number cannot be negative.");
+        }
+        long factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+}
+
+2ND PROGRAM:
+public class Calculator {
+    public int add(int num1, int num2) {
+        return num1 + num2;
+    }
+    public double add(double num1, double num2) {
+        return num1 + num2;
+    }
+    public int subtract(int num1, int num2) {
+        return num1 - num2;
+    }
+    public double subtract(double num1, double num2) {
+        return num1 - num2;
+    }
+    public int multiply(int num1, int num2) {
+        return num1 * num2;
+    }
+    public double multiply(double num1, double num2) {
+        return num1 * num2;
+    }
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        // Testing addition
+        int sum1 = calculator.add(5, 3);
+        System.out.println("Sum 1: " + sum1);
+        double sum2 = calculator.add(2.5, 3.7);
+        System.out.println("Sum 2: " + sum2);
+        // Testing subtraction
+        int difference1 = calculator.subtract(8, 4);
+        System.out.println("Difference 1: " + difference1);
+        double difference2 = calculator.subtract(9.6, 2.3);
+        System.out.println("Difference 2: " + difference2);
+        // Testing multiplication
+        int product1 = calculator.multiply(6, 7);
+        System.out.println("Product 1: " + product1);
+        double product2 = calculator.multiply(3.5, 2.2);
+        System.out.println("Product 2: " + product2);
+    }
+
+
+3RD PROGRAM:
+import java.util.Scanner;
+public class SeriesSum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+        double sum = 0.0;
+        for (int i = 1; i <= n; i++) {
+            sum += 1.0 / i;
+        }
+        System.out.println("The sum of the series is: " + sum);
+        scanner.close();
+    }
+}
+4TH PROGRAM:
+import java.util.Scanner;
+
+public class VowelOrConsonant {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a character: ");
+        char ch = scanner.next().charAt(0);
+        
+        if (isVowel(ch)) {
+            System.out.println(ch + " is a vowel.");
+        } else {
+            System.out.println(ch + " is a consonant.");
+        }
+        
+        scanner.close();
+    }
+    
+    public static boolean isVowel(char ch) {
+        ch = Character.toLowerCase(ch);
+        
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+}
+
+5TH PROGRAM:
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the marks for the following subjects:");
+        System.out.print("Physics: ");
+        int physicsMarks = scanner.nextInt();
+        System.out.print("Chemistry: ");
+        int chemistryMarks = scanner.nextInt();
+        System.out.print("Biology: ");
+        int biologyMarks = scanner.nextInt();
+        System.out.print("Mathematics: ");
+        int mathMarks = scanner.nextInt();
+        System.out.print("Computer: ");
+        int computerMarks = scanner.nextInt();
+
+        int totalMarks = physicsMarks + chemistryMarks + biologyMarks + mathMarks + computerMarks;
+        double percentage = (totalMarks / 5.0) * 100;
+
+        String grade;
+
+        if (percentage >= 90) {
+            grade = "A";
+        } else if (percentage >= 80) {
+            grade = "B";
+        } else if (percentage >= 70) {
+            grade = "C";
+        } else if (percentage >= 60) {
+            grade = "D";
+        } else if (percentage >= 40) {
+            grade = "E";
+        } else {
+            grade = "F";
+        }
+
+        System.out.println("Percentage: " + percentage);
+        System.out.println("Grade: " + grade);
+    }
+}
+
+

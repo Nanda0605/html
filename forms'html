@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    </head>
+<body>
+    <form>
+        <label for="email">email id</label>
+        <input type="email"placeholder="enter your email id"value=""required autofocus><br/><br/>
+        <label for="password">password</label>
+        <input type="password"placeholder="password"value=""required autofocus><br/><Br/>
+        <button>submit</button><br/>
+    </form>
+</body>
+</html>

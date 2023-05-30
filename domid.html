@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>document</title>
+</head>
+<body>
+<label>name</label>
+<input type="text" id="Dheeraj">
+<label>age</label>
+<input type="text" id="20">
+<button onclick="username()">save</button>
+<h1 id="getdata"></h1>
+<h2 id="afew"></h2>
+</body>
+<script>
+var name
+var age
+function username()
+{
+name=document.getElementById("Dheeraj").value
+document.getElementById("getdata").textContent=name
+age=document.getElementById("20").value
+document.getElementById("afew").textContent=age
+}
+</script>
+</html>  

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>background colour</title>
+</head>
+<body style="backgroun-color:yellow;">
+<h3>the title of the paragraph</h3>
+<p>we have the paragraph over here</p>
+</body>
+</html>
